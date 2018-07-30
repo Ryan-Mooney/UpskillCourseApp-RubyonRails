@@ -16,11 +16,15 @@
  
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
 
+//Typography
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+//Bacgkround Callouts
 .navbar, .home-callout {
     // Gradient provided by https://twitter.com/_ighosh
     background: #00F260;  /* fallback for old browsers */
@@ -34,6 +38,12 @@ h1, h2, h3 {
     color: white;
 }
 
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+//Navbar Styles
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: white;
@@ -43,6 +53,20 @@ h1, h2, h3 {
     }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: green;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+}
+
+//Homepage Styles
 .home-callout {
     color: white;
     margin-top: -20px;
